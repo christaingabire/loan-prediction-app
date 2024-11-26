@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loan Predictor</title>
+    <meta content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1>Loan Approval Prediction</h1>
+    <form action="/predict" method="post">
+        <label>Gender (1=Male, 0=Female):</label><br>
+        <input type="number" name="gender" required><br><br>
+
+        <label>Married (1=Yes, 0=No):</label><br>
+        <input type="number" name="married" required><br><br>
+
+        <label>Dependents (0, 1, 2, 3):</label><br>
+        <input type="number" name="dependents" required><br><br>
+
+        <label>Education (1=Graduate, 0=Not Graduate):</label><br>
+        <input type="number" name="education" required><br><br>
+
+        <label>Self Employed (1=Yes, 0=No):</label><br>
+        <input type="number" name="self_employed" required><br><br>
+
+        <label>Applicant Income:</label><br>
+        <input type="number" name="applicant_income" required><br><br>
+
+        <label>Coapplicant Income:</label><br>
+        <input type="number" name="coapplicant_income" required><br><br>
+
+        <label>Loan Amount:</label><br>
+        <input type="number" name="loan_amount" required><br><br>
+
+        <label>Loan Term:</label><br>
+        <input type="number" name="loan_term" required><br><br>
+
+        <label>Property Area (1=Urban, 0=Semiurban, 2=Rural):</label><br>
+        <input type="number" name="property_area" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
